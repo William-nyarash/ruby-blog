@@ -1,24 +1,7 @@
-# README
+# Exploring the world of ruby
+one line at  a time
 
-This README would normally document whatever steps are necessary to get the
-application up and running.
+## learning outcomes
+[ x ] learn how to create views in ruby on rails 
 
-Things you may want to cover:
-
-* Ruby version
-
-* System dependencies
-
-* Configuration
-
-* Database creation
-
-* Database initialization
-
-* How to run the test suite
-
-* Services (job queues, cache servers, search engines, etc.)
-
-* Deployment instructions
-
-* ...
+[ x ] create my  database schema
