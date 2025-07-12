@@ -1,7 +1,8 @@
-Rails.application.routes.draw do 
+Rails.application.routes.draw do
+  get "blog_posts/new", to: "blog_posts#new", as: :new_blog_posts
+  get "/blog_posts/:id", to: "blog_posts#show", as: :blog_post
+  get "/blog_posts", to: "blog_posts#create", as: :blog_posts
 
-  get "/blog_posts/:id", to: "blog_posts#show"
-
-  defines the default path route ("/");
+  # defines the default path route ("/")
   root "blog_posts#index"
 end
