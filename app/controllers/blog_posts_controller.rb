@@ -1,4 +1,5 @@
 class BlogPostsController < ApplicationController
+   # before_action :set_blog_post, expe
    def index
       @blog_posts = BlogPost.all
    end
@@ -36,6 +37,12 @@ class BlogPostsController < ApplicationController
       else
          render :edit, status: :unprocessable_entity
       end
+   end
+
+   def destroy
+         @blog_post = BlogPost.find(params[:id])
+         @blog_post.destroy
+         redirect_to root_path
    end
 
    private
