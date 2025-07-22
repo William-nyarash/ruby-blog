@@ -22,19 +22,21 @@
     <%= javascript_importmap_tags %>
   </head>
 
-  <body>
+  <body class="prose mx-auto mt-2.5 bg-gray-100 " >
     <p class="notice"><%= notice %></p>
     <p class="alert"><%= alert %> </p>
-    <div>
+    <div class="flex  flex-row justify-between align-baseline  items-center  shadow-lg  text-amber-400 py-1.5 px-3">
         <%if user_signed_in?%>
           <%# <%= link_to "Profile", edit_user_registration_path %> 
-          <%= link_to "new blog post" , new_blog_post_path %>
-          <%= button_to "Log out" , destroy_user_session_path, method: :delete %>
+          <%= link_to "new blog post" , new_blog_post_path ,class: "font-bold text-2xl" %>
+          <%= button_to "Log out"  , destroy_user_session_path, method: :delete, class: "p-2 rounded-lg bg-gray-200 hover:bg-gray-300   uppercase font-bold" %>
           <%# <% else %> 
             <%# <% link_to "login", new_user_session_path %> 
             <%# <% link_to "Sign Up "  , new_user_registration_path%> 
         <%end%>
     </div>
-    <%= yield %>
+    <div class="shadow-lg px-5 py-3 rounded-2xl bg-gray-300 mx-auto max-w-prose sm:w-4/5 text-center ">
+      <%= yield %>
+    </div>
   </body>
 </html>

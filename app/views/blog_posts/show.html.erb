@@ -1,5 +1,5 @@
 <%= link_to "edit" , edit_blog_post_path(@blog_post)  if user_signed_in? %>
-<h1><%= @blog_post.title %></h1>
+<h1 class="bg-amber-500 px-3 py-2 mb-2 h-4" ><%= @blog_post.title %></h1>
 <div>
     <%= @blog_post.body %>
 </div>
