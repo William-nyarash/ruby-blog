@@ -23,7 +23,7 @@
   </head>
 
   <body class="prose mx-auto mt-2.5 bg-gray-100 " >
-    <p class="notice"><%= notice %></p>
+    <p class="notice bg-amber-200 text-2xl "><%= notice %></p>
     <p class="alert"><%= alert %> </p>
     <div class="flex  flex-row justify-between align-baseline  items-center  shadow-lg  text-amber-400 py-1.5 px-3">
         <%if user_signed_in?%>
@@ -35,7 +35,7 @@
             <%# <% link_to "Sign Up "  , new_user_registration_path%> 
         <%end%>
     </div>
-    <div class="shadow-lg px-5 py-3 rounded-2xl bg-gray-300 mx-auto max-w-prose sm:w-4/5 text-center ">
+    <div class="shadow-lg px-5 py-3 rounded-2xl mt-13 bg-gray-300 mx-auto max-w-prose sm:w-4/5 lg:w-max text-center ">
       <%= yield %>
     </div>
   </body>

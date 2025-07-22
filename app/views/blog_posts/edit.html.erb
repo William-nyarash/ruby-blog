@@ -1,6 +1,6 @@
-<h2>
+<h2 class="mb-7 text-4xl text-center uppercase font-bold text-amber-600">
     edit blog post
 </h2>
 <%= render partial: "form" , locals: { blog_post: @blog_post} %> 
 
-<%= button_to "Delete", @blog_post, method: :delete, data: { turbo_confirm: "Are sure you want to delete" }%>
+<%= button_to "Delete", @blog_post, method: :delete, data: { turbo_confirm: "Are sure you want to delete" } , class: "bg-gray-100  hover:bg-gray-200 p-2 rounded-lg  my-3"%>

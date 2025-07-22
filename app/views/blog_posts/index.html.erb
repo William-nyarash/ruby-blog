@@ -1,8 +1,10 @@
-<h1 class="bg-red-100">Hello welcome to ruby</h1>
+<h1 class="text-4xl mb-3 text-gray-400 capitalize p-2 font-medium">Hello welcome to ruby</h1>
 
 <% @blog_posts.each do |blog_posts| %>
-    <div>
-        <h2><%= blog_posts.title%></h2>
-        <div><%= blog_posts.body %>  <b>created at:</b> <%= blog_posts.created_at%> </div>
+    <div class=" text-center" >
+        <div class="flex flex-row flex-nowrap border-dotted border-purple-900  hover:shadow-2xl rounded-2xl border-2 w-full my-3 px-3 py-2">
+            <h2 class="font-extralight text-gray-800 capitalize grow"><%= blog_posts.title%></h2>
+            <div ><%= blog_posts.body %>  <b>created at:</b> <%= blog_posts.created_at%> </div>
+        </div>
     </div>
 <%end%>
